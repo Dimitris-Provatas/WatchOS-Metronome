@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		76E7551D2ABC45D9004A224D /* Metronome Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 76E7551C2ABC45D9004A224D /* Metronome Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		76E755222ABC45D9004A224D /* MetronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E755212ABC45D9004A224D /* MetronomeApp.swift */; };
-		76E755242ABC45D9004A224D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E755232ABC45D9004A224D /* ContentView.swift */; };
+		76E755242ABC45D9004A224D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E755232ABC45D9004A224D /* Main.swift */; };
 		76E755262ABC45DA004A224D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E755252ABC45DA004A224D /* Assets.xcassets */; };
 		76E755292ABC45DA004A224D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E755282ABC45DA004A224D /* Preview Assets.xcassets */; };
-		76E755332ABC45DA004A224D /* Metronome_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E755322ABC45DA004A224D /* Metronome_Watch_AppTests.swift */; };
-		76E7553D2ABC45DA004A224D /* Metronome_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7553C2ABC45DA004A224D /* Metronome_Watch_AppUITests.swift */; };
-		76E7553F2ABC45DA004A224D /* Metronome_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7553E2ABC45DA004A224D /* Metronome_Watch_AppUITestsLaunchTests.swift */; };
+		76E755522AC0720A004A224D /* BeatCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E755512AC0720A004A224D /* BeatCircles.swift */; };
+		76E755542AC07238004A224D /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E755532AC07238004A224D /* Globals.swift */; };
+		76E755562AC08DAD004A224D /* BeatSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E755552AC08DAD004A224D /* BeatSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +59,14 @@
 		76E755162ABC45D9004A224D /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E7551C2ABC45D9004A224D /* Metronome Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metronome Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E755212ABC45D9004A224D /* MetronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeApp.swift; sourceTree = "<group>"; };
-		76E755232ABC45D9004A224D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		76E755232ABC45D9004A224D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		76E755252ABC45DA004A224D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E755282ABC45DA004A224D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76E7552E2ABC45DA004A224D /* Metronome Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metronome Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E755322ABC45DA004A224D /* Metronome_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome_Watch_AppTests.swift; sourceTree = "<group>"; };
 		76E755382ABC45DA004A224D /* Metronome Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metronome Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E7553C2ABC45DA004A224D /* Metronome_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		76E7553E2ABC45DA004A224D /* Metronome_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76E755512AC0720A004A224D /* BeatCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCircles.swift; sourceTree = "<group>"; };
+		76E755532AC07238004A224D /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		76E755552AC08DAD004A224D /* BeatSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				76E755202ABC45D9004A224D /* Metronome Watch App */,
-				76E755312ABC45DA004A224D /* Metronome Watch AppTests */,
-				76E7553B2ABC45DA004A224D /* Metronome Watch AppUITests */,
 				76E755172ABC45D9004A224D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,7 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				76E755212ABC45D9004A224D /* MetronomeApp.swift */,
-				76E755232ABC45D9004A224D /* ContentView.swift */,
+				76E755232ABC45D9004A224D /* Main.swift */,
+				76E755552AC08DAD004A224D /* BeatSetup.swift */,
+				76E755512AC0720A004A224D /* BeatCircles.swift */,
+				76E755532AC07238004A224D /* Globals.swift */,
 				76E755252ABC45DA004A224D /* Assets.xcassets */,
 				76E755272ABC45DA004A224D /* Preview Content */,
 			);
@@ -132,23 +133,6 @@
 				76E755282ABC45DA004A224D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		76E755312ABC45DA004A224D /* Metronome Watch AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				76E755322ABC45DA004A224D /* Metronome_Watch_AppTests.swift */,
-			);
-			path = "Metronome Watch AppTests";
-			sourceTree = "<group>";
-		};
-		76E7553B2ABC45DA004A224D /* Metronome Watch AppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				76E7553C2ABC45DA004A224D /* Metronome_Watch_AppUITests.swift */,
-				76E7553E2ABC45DA004A224D /* Metronome_Watch_AppUITestsLaunchTests.swift */,
-			);
-			path = "Metronome Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E755242ABC45D9004A224D /* ContentView.swift in Sources */,
+				76E755542AC07238004A224D /* Globals.swift in Sources */,
+				76E755242ABC45D9004A224D /* Main.swift in Sources */,
+				76E755562AC08DAD004A224D /* BeatSetup.swift in Sources */,
+				76E755522AC0720A004A224D /* BeatCircles.swift in Sources */,
 				76E755222ABC45D9004A224D /* MetronomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +305,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E755332ABC45DA004A224D /* Metronome_Watch_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E7553D2ABC45DA004A224D /* Metronome_Watch_AppUITests.swift in Sources */,
-				76E7553F2ABC45DA004A224D /* Metronome_Watch_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
